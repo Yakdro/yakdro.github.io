@@ -41,7 +41,8 @@ window.addEventListener('scroll', () => {
 
 // smooth scroll//
 window.addEventListener('load', () => {
-  window.scrollTo(0, 0);
+  setTimeout(() => {
+    window.scrollTo({ top: 0, behavior: 'auto' });
+  }, 0);
 });
-
 
