@@ -39,3 +39,8 @@ window.addEventListener('scroll', () => {
   scrollTopBtn.style.display = (window.scrollY > 200) ? "block" : "none";
 });
 
+// smooth scroll//
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
+
