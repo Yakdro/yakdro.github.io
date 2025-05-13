@@ -40,7 +40,8 @@ window.addEventListener('scroll', () => {
 });
 
 // smooth scroll//
-window.onbeforeunload = function () {
+window.addEventListener('load', () => {
   window.scrollTo(0, 0);
-};
+});
+
 
