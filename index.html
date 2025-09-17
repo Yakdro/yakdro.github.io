@@ -4,7 +4,7 @@
     <meta name="description" content="David Daduut builds simple websites for small businesses in Nigeria. Need a clean, mobile-friendly website? Let's work together.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="img/fav_icon/fav_icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
     <title>Daduut Web Design</title>
     <link rel="stylesheet" href="style.css">
@@ -17,8 +17,14 @@
 
     <!--Hero Section-->
     <header class="hero">
+
+      <!-- Brand Logo -->
+    <div class="logo">
+      <img src="./img/fav_icon/fav_icon.png" alt="Brand Logo">
+    </div>
+
         <h1>Hi, I'm David Daduut</h1>
-        <p>I build simple and clean websites for small businesses</p>
+        <p>I help businesses stand out with simple websites and eye-catching designs.</p>
         <a href="https://wa.me/2347065108485?text=Hi%20David%2C%20I%20saw%20your%20website%20and%20want%20to%20work%20with%20you!" class="btn" target="_blank">Let's Work Together</a>
        <a href="#contact" class="btn" aria-label="Go to contact section">Contact Us</a>
     </header>
@@ -27,9 +33,7 @@
     <section class="about fade-in"> 
         <h2>About Me</h2>
         <p>
-            My name is David Daduut. I design simple and mobile-friendly websites for local businesses.
-             I enjoy helping business owners put their work online in a clean and professional way.
-             If you run a salon, restaurant, or shop, I can help you get a website that brings more people to your business. 
+            I’m David Daduut, a designer who helps businesses look good online and offline. From clean, mobile-friendly websites to eye-catching graphics, I make sure your business leaves the right impression. If you run a salon, restaurant, or shop, I can help you connect with more customers.
         </p>
     </section>
 
@@ -38,23 +42,195 @@
         <h2>Projects</h2>
         <div class="project">
             <h3>My Portfolio Website</h3>
-            <p>This website you are looking at is my first project. I built it using HTML and CSS to showcase my skills.</p>
+            <p>This is the website you’re currently viewing. I built it using HTML and CSS to showcase my skills in both web design and development.</p>
             <!--Add Link Later-->
         </div>
 
         <div class="project">
-  <h3>Resturant Website</h3>
-  <p>Website for a small catering business with a simple order process, contact form, and mobile support.</p>
+  <h3>Resturant Website (First version)</h3>
+  <p>A starter design for a local catering business, featuring a clean layout, simple order process, contact form, and basic mobile support.</p>
   <a href="http://yakdro.github.io/fidians-cake" target="_blank">View Project</a>
 </div>
 
         <div class="project">
-  <h3>Resturant Website beta version</h3>
-  <p>The beta version Website for a small catering business with a simple order process, contact form, and mobile support.</p>
+  <h3>Resturant Website (Final Version)</h3>
+  <p>The finished version of the catering website, now improved with a modern design, smooth order process, and fully responsive mobile experience — ready for real customers.</p>
   <a href="https://yakdro.github.io/fidian-chops" target="_blank">View Project</a>
         </div>
     </section>
 
+
+    <!--My Graphics Work Section-->
+        <section id="menu" class="work-display fade-in">
+            <div class="container">
+                
+                <div class="work-intro">
+                  <h2>My Best Work Yet!</h2>
+                  <p>From unique flyers that stand out to branding designs that speak for themselves — and even custom jotters that are hard to ignore — each piece is crafted to leave a lasting impression. Click below to explore the categories!</p>
+                </div>
+
+               <!-- <h2> My Designs </h2> -->
+
+                <div class="design-grid">
+
+                  <!-- image-design 1 -->
+                    <div class="image-designs">
+                        <img src="./img/flyer-design.jpg" alt="flyer design" loading="lazy" onclick="openModal('flyerModal')" style="cursor: pointer;">
+                        <h3>Flyer Design</h3>
+                        <p>Strong visuals and layouts designed to capture attention at first glance. Each flyer is crafted to fit the event, brand, or promotion it represents.</p>
+                      </div>
+
+                      <!-- image-design 2 -->
+                    <div class="image-designs">
+                        <img src="./img/wedding-jotter-design.png" alt="wedding jotter design" loading="lazy" onclick="openModal('jotterModal')" style="cursor: pointer;">
+                        <h3>Jotter Design</h3>
+                        <p>Stylish jotter designs tailored for every occasion — from formal ceremonies to personal celebrations, each piece is created to be both functional and memorable.</p>
+                    </div>
+
+
+                    <!-- image-design 7 -->
+                    <div class="image-designs">
+                        <img src="./img/business-card-design.png" alt="business card design" loading="lazy" onclick="openModal('cardModal')" style="cursor: pointer;">
+                        <h3>Business Card Design</h3>
+                        <p>Professional business cards designed to leave a lasting impression. Each card combines clarity, style, and branding to make sure your first introduction speaks volumes.</p>
+                    </div>
+
+            </div>
+        </section>
+
+
+        <!-- Modal Section FLYERS -->
+<div id="flyerModal" class="menu-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('flyerModal')">&times;</span>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Slides -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img/flyer-design.jpg" style="width:100%">
+        <div class="text">Bold and playful design created to draw attention and set the mood for a fun event.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./img/flyer-design2.jpg" style="width:100%">
+        <div class="text">Bright, lively layout crafted to entertain and invite the audience in at first glance.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./img/flyer-design3.png" style="width:100%">
+        <div class="text">Clean and modern promotional design built to reflect a fresh brand identity and connect with the right audience.</div>
+      </div>
+
+      <!-- Next/Prev buttons -->
+      <a class="prev" onclick="plusSlides(-1, 'flyerModal')">❮</a>
+      <a class="next" onclick="plusSlides(1, 'flyerModal')">❯</a>
+    </div>
+
+    <!-- Dots -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1, 'flyerModal')"></span>
+      <span class="dot" onclick="currentSlide(2, 'flyerModal')"></span>
+      <span class="dot" onclick="currentSlide(3, 'flyerModal')"></span>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Modal Section JOTTERS -->
+<div id="jotterModal" class="menu-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('jotterModal')">&times;</span>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Slides -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img/induction-jotter-design.png" style="width:100%">
+        <div class="text">Professional layout designed to mark a new beginning with elegance and clarity.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./img/conferment-jotter-design.png" style="width:100%">
+        <div class="text">Refined design crafted to honor achievement and add prestige to the event.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./img/wedding-jotter-design.png" style="width:100%">
+        <div class="text">A warm, celebratory design made to capture love, joy, and lasting memories.</div>
+      </div>
+
+      <!-- Next/Prev buttons -->
+      <a class="prev" onclick="plusSlides(-1, 'jotterModal')">❮</a>
+      <a class="next" onclick="plusSlides(1, 'jotterModal')">❯</a>
+    </div>
+
+    <!-- Dots -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1, 'jotterModal')"></span>
+      <span class="dot" onclick="currentSlide(2, 'jotterModal')"></span>
+      <span class="dot" onclick="currentSlide(3, 'jotterModal')"></span>
+    </div>
+  </div>
+</div>
+
+
+        <!-- Add more items if needed -->
+      </div>
+    </div>
+
+
+    <!-- Modal Section JOTTERS -->
+<div id="cardModal" class="menu-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('cardModal')">&times;</span>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Slides -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="./img/business-card-design.png" style="width:100%">
+        <div class="text">Bold design with strong colors and fonts, crafted to stand out and be remembered.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="./img/complementary-card-design.png" style="width:100%">
+        <div class="text">Sleek and minimal layout built for professionals who prefer a clean, modern identity.</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="./img/complementary-card-design2.png" style="width:100%">
+        <div class="text">Balanced and elegant look tailored for formal settings, giving your brand a polished presence.</div>
+      </div>
+
+      <!-- Next/Prev buttons -->
+      <a class="prev" onclick="plusSlides(-1, 'cardModal')">❮</a>
+      <a class="next" onclick="plusSlides(1, 'cardModal')">❯</a>
+    </div>
+
+    <!-- Dots -->
+    <div class="dot-container">
+      <span class="dot" onclick="currentSlide(1, 'cardModal')"></span>
+      <span class="dot" onclick="currentSlide(2, 'cardModal')"></span>
+      <span class="dot" onclick="currentSlide(3, 'cardModal')"></span>
+    </div>
+  </div>
+</div>
+
+        <!-- Add more items if needed -->
+      </div>
+    </div>
+
+    
     <!--Services Section-->
     <section class="services fade-in">
         <h2>What I Can Do</h2>
@@ -63,6 +239,9 @@
             <li>Mobile-friendly design</li>
             <li>Landing pages to promote a product or service</li>
             <li>Update and improve old websites</li>
+            <li>Design flyers that grab attention and send the right message</li>
+            <li>Create custom jotters for events, conferences, and weddings</li>
+            <li>Craft clean business cards that make strong first impressions</li>
         </ul>
     </section>
 
@@ -72,8 +251,25 @@
         <h2>Contact Me</h2>
         <p>You can reach me on:</p>
         <ul>
-            <li><i class="fas fa-envelope"></i> Email: <a href="mailto:davidyaksun@gmail.com" target="_blank">davidyaksun@gmail.com</a></li>
-            <li><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/2347065108485?text=Hi David, I saw your website and want to work with you!" target="_blank">2347065108485</a></li>
+
+           <li>
+  <i class="fab fa-linkedin"></i> LinkedIn: 
+  <a href="https://linkedin.com/in/david-daduut-0a2890252" target="_blank">
+    David Daduut
+  </a>
+</li>
+
+<li>
+  <i class="fab fa-github"></i> GitHub: 
+  <a href="https://github.com/Yakdro" target="_blank">
+    David Daduut
+  </a>
+</li>
+
+     <li><i class="fas fa-envelope"></i> Email: <a href="mailto:davidyaksun11@gmail.com" target="_blank">davidyaksun11@gmail.com</a></li>
+
+    <li><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/2347065108485?text=Hi David, I saw your website and want to work with you!" target="_blank">2347065108485</a></li>
+            
         </ul>
     </section>
 </main>
@@ -81,7 +277,6 @@
     <footer>
        <p>&copy; 2025 <i class="fas fa-code"></i> Daduut Web Design. All rights reserved</p>
     </footer>
-
 
     <!--script for scroll function-->
     <script src="script.js"></script>
